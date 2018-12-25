@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class JobForm {
 
     @NotNull
-    @Size(min=1, message = "Name may not be empty")
+    @Size(min = 1, message = "Name may not be empty")
     private String name;
 
     @NotNull
@@ -78,23 +78,45 @@ public class JobForm {
         this.employerId = employerId;
     }
 
+    public int getLocationId() {
+        return locationId;
+    }
+
+    public void setLocationId(int locationId) {
+        this.locationId = locationId;
+    }
+
+    public int getCoreCompetenciesId() {
+        return coreCompetenciesId;
+    }
+
+    public void setCoreCompetenciesId(int coreCompetenciesId) {
+        this.coreCompetenciesId = coreCompetenciesId;
+    }
+
+    public int getPositionTypeId() {
+        return positionTypeId;
+    }
+
+    public void setPositionTypeId(int positionTypeID) {
+        this.positionTypeId = positionTypeId;
+    }
+
     public ArrayList<Employer> getEmployers() {
 
         return employers;
     }
 
-    public void setEmployers(ArrayList<Employer> employers) {
+    public void setEmployers(ArrayList<Employer> locations) {
 
         this.employers = employers;
     }
 
     public ArrayList<Location> getLocations() {
-
         return locations;
     }
 
     public void setLocations(ArrayList<Location> locations) {
-
         this.locations = locations;
     }
 
